@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>FIFA Tournament Dashboard</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>FIFA Tournament</h1>
+    <p class="subtitle">Group stage — home &amp; away — top 4 per group advance to knockout</p>
+
+    <div class="group-tabs" id="groupTabs">
+      <button class="group-tab active" data-group="g1">Group 1</button>
+      <button class="group-tab" data-group="g2">Group 2</button>
+    </div>
+
+    <section id="section-g1" class="group-section">
+      <h2>Group 1 — Standings</h2>
+      <table id="leagueTable-g1">
+        <thead>
+          <tr>
+            <th>Pos</th><th>Player</th><th>P</th><th>W</th><th>D</th><th>L</th>
+            <th>GF</th><th>GA</th><th>GD</th><th>Pts</th><th>Form</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h2>Group 1 — Fixtures</h2>
+      <div class="filter">
+        <label for="fixtureFilter-g1">Filter by player:</label>
+        <select id="fixtureFilter-g1"><option value="all">All players</option></select>
+        <label for="statusFilter-g1" style="margin-left:15px;">Status:</label>
+        <select id="statusFilter-g1">
+          <option value="all">All</option>
+          <option value="completed">Played</option>
+          <option value="scheduled">Upcoming</option>
+        </select>
+      </div>
+      <table id="fixtureTable-g1">
+        <thead>
+          <tr><th>MD</th><th>Home</th><th>Score</th><th>Away</th><th>Status</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+
+    <section id="section-g2" class="group-section" style="display:none">
+      <h2>Group 2 — Standings</h2>
+      <table id="leagueTable-g2">
+        <thead>
+          <tr>
+            <th>Pos</th><th>Player</th><th>P</th><th>W</th><th>D</th><th>L</th>
+            <th>GF</th><th>GA</th><th>GD</th><th>Pts</th><th>Form</th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+
+      <h2>Group 2 — Fixtures</h2>
+      <div class="filter">
+        <label for="fixtureFilter-g2">Filter by player:</label>
+        <select id="fixtureFilter-g2"><option value="all">All players</option></select>
+        <label for="statusFilter-g2" style="margin-left:15px;">Status:</label>
+        <select id="statusFilter-g2">
+          <option value="all">All</option>
+          <option value="completed">Played</option>
+          <option value="scheduled">Upcoming</option>
+        </select>
+      </div>
+      <table id="fixtureTable-g2">
+        <thead>
+          <tr><th>MD</th><th>Home</th><th>Score</th><th>Away</th><th>Status</th></tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </section>
+  </div>
+  <script src="script.js"></script>
+</body>
+</html>
