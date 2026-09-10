@@ -2,7 +2,7 @@
 // Paste your Google Sheet ID here (the long string in the sheet's URL,
 // between /d/ and /edit). The sheet must be shared as "Anyone with the
 // link can view".
-const SHEET_ID = 'PASTE_YOUR_SHEET_ID_HERE';
+const SHEET_ID = '1KkzmC4biyIcdH5Err70h8R_cm-9VWX71CL1i-7msw5Y';
 
 // Must match your sheet tab names exactly.
 const GROUPS = [
